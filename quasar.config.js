@@ -69,7 +69,9 @@ module.exports = configure(function (/* ctx */) {
 
       // publicPath: '/',
       // analyze: true,
-      // env: {},
+      env: {
+        VUE_APP_API_URI: process.env.VUE_APP_API_URI
+      },
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,
